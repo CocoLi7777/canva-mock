@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
       rel="stylesheet"
     />
@@ -108,9 +114,104 @@
           </a>
         </div>
         <div class="creating-btn">
-          <button class="btn-inner">
+          <button class="btn-inner" id="createBtn">
             <span>Create a design</span>
           </button>
+          <div class="design-area show" id="designArea">
+            <div class="drop-down">
+              <div class="search-field">
+                <img src="images/search.svg" alt="search" />
+                <input type="text" class="search-input" placeholder="Search" />
+              </div>
+              <ul class="list-field">
+                <li>
+                  <a href="">
+                    <i class="fas fa-plus fa-fw"></i>
+                    <span>Custom dimensions</span>
+                  </a>
+                </li>
+                <div class="dropdown-title">Suggested</div>
+
+                <li>
+                  <a href="">
+                    <i class="fas fa-file-invoice fa-fw"></i>
+                    <span>Invoice</span>
+                    <span class="secondary">21 x 29.7 cm</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-eye fa-fw"></i>
+                    <span>Logo</span>
+                    <span class="secondary">500 x 500 px</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-paste fa-fw"></i>
+                    <span>Poster</span>
+                    <span class="secondary">42 x 59.4 cm</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-photo-video fa-fw"></i>
+                    <span>Presentation</span>
+                    <span class="secondary">1920 x 1080 px</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fab fa-instagram fa-fw ins-con"></i>
+                    <span>Instagram Post</span>
+                    <span class="secondary">1080 x 1080 px</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-video fa-fw"></i>
+                    <span>Video</span>
+                    <span class="secondary">1920 x 1080 px</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fab fa-facebook-square fa-fw facebook-icon"></i>
+                    <span>facebook Post</span>
+                    <span class="secondary">940 x 788 px</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-chart-pie fa-fw"></i>
+                    <span>Infographic</span>
+                    <span class="secondary">800 x 2000 px</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-envelope-open-text fa-fw"></i>
+                    <span>Invatation</span>
+                    <span class="secondary">14 x 14 cm</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fab fa-facebook-square fa-fw facebook-icon"></i>
+                    <span>facebook Cover</span>
+                    <span class="secondary">2050 x 780 px</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-envelope-open-text fa-fw"></i>
+                    <span>Card</span>
+                    <span class="secondary">7 x 5 in</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="account-btn">
           <img src="images/account-logo.jpg" alt="account" />
@@ -118,5 +219,6 @@
         <div class="dropdown-menu"></div>
       </header>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
