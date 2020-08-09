@@ -297,3 +297,151 @@ body {
   font-size: 12px;
   display: none;
 }
+
+/* main body area */
+.main-body {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.left-nav {
+  width: 17%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #0e1318;
+}
+.left-nav .nav-list {
+  width: 100%;
+  padding: 10px;
+}
+.left-nav .list-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-size: 15px;
+  font-weight: 300px;
+}
+.left-nav .list-items .list-item {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+}
+.left-nav .list-items .list-item:hover {
+  background-color: rgba(14, 19, 24, 0.07);
+  border-radius: 5px;
+}
+.left-nav .list-item a {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  line-height: 40px;
+  padding-left: 10px;
+}
+.left-nav .list-items .primary {
+  background-color: rgba(14, 19, 24, 0.07);
+  border-radius: 5px;
+  font-weight: 700;
+}
+.left-nav .list-item a svg {
+  margin-left: 10px;
+}
+.left-nav .list-item a span {
+  margin-left: 10px;
+}
+.left-nav .crown-btn {
+  position: absolute;
+  bottom: 30px;
+  margin-left: 40px;
+  width: 220px;
+  height: 40px;
+}
+.left-nav .crown-btn button {
+  outline: none;
+}
+
+.left-nav .crown-btn .pro-btn {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-nav .pro-btn:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+.left-nav .crown-btn .pro-btn svg {
+  color: #fbbe28;
+  min-width: 16px;
+}
+.left-nav .crown-btn .pro-btn span {
+  font-size: 15px;
+  min-width: 16px;
+
+  margin-left: 10px;
+}
+.canva-pro {
+  display: flex;
+  justify-content: start;
+  width: 1060px;
+  height: 590px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  z-index: 9999;
+}
+.pro-show {
+  display: block !important;
+}
+.canva-pro img {
+  width: 95%;
+  height: 95%;
+}
+.canva-pro button {
+  width: 27px;
+  height: 27px;
+  border: none;
+  background-color: rgba(14, 19, 24, 0.2);
+  color: #fff;
+  border-radius: 50%;
+  outline: none;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+.canva-pro button:hover {
+  cursor: pointer;
+  background-color: #979dac;
+}
+#cover {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  opacity: 1;
+  display: none;
+  z-index: 888;
+}
+
+.slider-area {
+  width: 83%;
+  height: 300px;
+  border: 1px red solid;
+}
