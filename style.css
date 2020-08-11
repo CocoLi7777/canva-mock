@@ -42,6 +42,16 @@ body {
 .main-menu {
   height: 80px;
 }
+@media only screen and (max-width: 950px) {
+  .main-menu,
+  .search-bar,
+  .help-btn,
+  .setting-btn,
+  .creating-btn,
+  .account-btn {
+    display: none;
+  }
+}
 .main-menu-inner {
   display: flex;
   justify-content: space-between;
@@ -109,12 +119,14 @@ body {
 }
 
 .search-bar {
-  width: 750px;
+  width: 50%;
 }
 
 .search-bar .search-area {
-  margin-left: 350px;
-  width: 400px;
+  /*margin-left: 350px;
+  width: 400px;*/
+  margin-left: 50%;
+  width: 50%;
   height: 45px;
   border: 1px rgba(14, 19, 24, 0.07) solid;
   border-radius: 5px;
@@ -190,7 +202,7 @@ body {
   width: 40px;
 }
 .main-nav .account-btn img {
-  width: 100%;
+  width: 40px;
   border-radius: 50%;
 }
 /*
@@ -305,6 +317,218 @@ body {
   display: none;
 }
 
+.main-nav .dropdown-menu .dropdown-btn {
+  border: none;
+  background-color: #fff;
+  outline: none;
+  display: none;
+  margin-right: 30px;
+}
+.main-nav .dropdown-menu .dropdown-btn:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 950px) {
+  .main-nav .dropdown-menu .dropdown-btn {
+    display: block;
+  }
+}
+.left-show {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.left-show .dropdown-area {
+  width: 270px;
+  height: 1200px;
+
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+}
+.left-show .dropdown-area .account-info {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto;
+  height: 80px;
+  align-items: center;
+}
+.left-show .dropdown-area .account-info img {
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+}
+.left-show .dropdown-area .account-info span {
+  width: 150px;
+  text-align: start;
+  height: 40px;
+  line-height: 40px;
+}
+.left-show .creating-btn {
+  width: 140px;
+  min-width: 140px;
+  height: 45px;
+}
+.left-show .creating-btn .btn-inner {
+  color: #fff;
+  background-color: #00c4cc;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+.left-show .creating-btn .btn-inner:hover {
+  filter: brightness(110%);
+}
+.left-show .btn-primary {
+  display: block !important;
+  width: 200px;
+}
+.left-show .dropdown-area .menu-list {
+  margin-top: 20px;
+  width: 100%;
+}
+.left-show .dropdown-area ul {
+  list-style-type: none;
+}
+.left-show .dropdown-area .menu-list .li-inner {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.left-show .dropdown-area ul li {
+  margin-top: 20px;
+  height: 30px;
+}
+.left-show .dropdown-area ul li:hover {
+  border-left: 5px #00c4cc solid;
+  cursor: pointer;
+}
+.left-show .creating-btn .design-area {
+  width: 370px;
+  height: 350px;
+  border: 1px rgba(14, 19, 24, 0.07) solid;
+  border-radius: 5px;
+  overflow: scroll;
+  padding-right: 0px;
+  margin-left: -230px;
+  margin-top: 10px;
+  display: none;
+  position: relative;
+  z-index: 9999;
+  background-color: #fff;
+}
+.show {
+  display: block !important;
+}
+.left-show .creating-btn .drop-down {
+  width: 100%;
+}
+.left-show .creating-btn .drop-down .search-field {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px rgba(14, 19, 24, 0.07) solid;
+  display: flex;
+  justify-content: left;
+  line-height: 40px;
+  padding-left: 15px;
+}
+.left-show .creating-btn .drop-down .search-field img {
+  width: 17px;
+  margin-right: 15px;
+}
+.left-show .creating-btn .drop-down .search-input {
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 300;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.left-show .creating-btn .drop-down ul {
+  list-style-type: none;
+}
+.left-show .creating-btn .drop-down ul li {
+  font-size: 15px;
+  color: #0e1318;
+  font-family: inherit;
+  font-weight: 300;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+.left-show .creating-btn .drop-down ul li:hover {
+  background-color: rgba(14, 19, 24, 0.07);
+}
+.left-show .creating-btn .drop-down ul li:hover .secondary {
+  display: inline;
+}
+.left-show .creating-btn .drop-down ul li a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+.left-show .creating-btn .drop-down ul li a i {
+  width: 40px;
+  height: 20px;
+  margin-left: 10px;
+}
+.main-nav .creating-btn .drop-down ul .ins-con {
+  color: #ff6348;
+}
+.left-show .creating-btn .drop-down ul .facebook-icon {
+  color: #227093;
+}
+.left-show .creating-btn .drop-down .dropdown-title {
+  color: gray;
+  font-size: 12px;
+  margin: 10px 25px;
+}
+.left-show .creating-btn .drop-down .secondary {
+  margin-left: 10px;
+  color: gray;
+  font-size: 12px;
+  display: none;
+}
+
+.left-show .dropdown-menu .dropdown-btn {
+  border: none;
+  background-color: #fff;
+  outline: none;
+  display: none;
+  margin-right: 30px;
+}
+.left-show .dropdown-menu .dropdown-btn:hover {
+  cursor: pointer;
+}
+
+@keyframes leftShowIn {
+  0% {
+    right: -270px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes leftShowOut {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: -270px;
+  }
+}
 /* main body area */
 .main-body {
   width: 50vw;
