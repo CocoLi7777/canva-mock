@@ -3,6 +3,7 @@ const crownBtn = document.getElementById('crownBtn');
 const proBtn = document.getElementById('proBtn');
 const coverLayer = document.getElementById('cover');
 const leftBtn = document.getElementById('leftBtn');
+const searchBar = document.getElementById('searchBar');
 
 const toggleDropdown = () => {
   const dropdown = document.getElementById('designArea');
@@ -40,6 +41,22 @@ const openLeftShow = () => {
   coverLayer.style.display = 'block';
 };
 
+window.onscroll = () => {
+  let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+  if (scrollTop > 400) {
+    searchBar.style.display = 'none';
+  }
+};
+
+$(document).ready(function () {
+  $('#autoWidth').lightSlider({
+    autoWidth: true,
+    loop: true,
+    onSliderLoad: function () {
+      $('#autoWidth').removeClass('cS-hidden');
+    },
+  });
+});
 createBtn.addEventListener('click', toggleDropdown);
 proBtn.addEventListener('click', closePropage);
 crownBtn.addEventListener('click', addProPage);
